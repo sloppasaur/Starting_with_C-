@@ -2,6 +2,7 @@
 
 #include <iostream>
 
+// main
 int main() {
   double length = 0, width = 0, area = 0;
 
