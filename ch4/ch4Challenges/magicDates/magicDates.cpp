@@ -6,6 +6,7 @@
 // the date is magic. Other wise, it should display a message saying
 // the date is not.
 #include <iostream>
+#include <iomanip>
 
 int main()
 {
@@ -23,9 +24,14 @@ int main()
         int magic = month * day;
         switch(month)
         {
-            // January
-            case 1:
-                if (magic = year)
+            case 1:             // January
+            case 3:             // March
+            case 5:             // May
+            case 7:             // July
+            case 8:             // August
+            case 10:            // October
+            case 12:            // December
+                if (magic == year)
                 {
                     std::cout << month << '/' << day << '/' << year
                     << " is magic!" << std::endl;
@@ -36,15 +42,14 @@ int main()
                     << " is not magic." << std::endl;
                 }
                 break;
-            // February
-            case 2:
+            case 2:             // February
                 if (day > 28)
                 {
                     std::cout << "This month has 28 days." << std::endl;
                 }
                 else
                 {
-                    if (magic = year)
+                    if (magic == year)
                     {
                         std::cout << month << '/' << day << '/' << year
                         << " is magic!" << std::endl;
@@ -56,28 +61,17 @@ int main()
                     }
                 }
                 break;
-            // March
-            case 3:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                break;
-            // April
-            case 4:
+            case 4:             // April
+            case 6:             // June
+            case 9:             // September
+            case 11:            // November
                 if (day > 30)
                 {
                     std::cout << "This month has 30 days." << std::endl;
                 }
                 else
                 {
-                    if (magic = year)
+                    if (magic == year)
                     {
                         std::cout << month << '/' << day << '/' << year
                         << " is magic!" << std::endl;
@@ -88,135 +82,6 @@ int main()
                         << " is not magic." << std::endl;
                     }
                 }
-                break;
-            // May
-            case 5:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                break;
-            // June
-            case 6:
-                if (day > 30)
-                {
-                    std::cout << "This month has 30 days." << std::endl;
-                }
-                else
-                {
-                    if (magic = year)
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is magic!" << std::endl;
-                    }
-                    else
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is not magic." << std::endl;
-                    }
-                }
-                break;
-            // July
-            case 7:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                    break;
-            // August
-            case 8:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                break;
-            // September
-            case 9:
-                if (day > 30)
-                {
-                    std::cout << "This month has 30 days." << std::endl;
-                }
-                else
-                {
-                    if (magic = year)
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is magic!" << std::endl;
-                    }
-                    else
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is not magic." << std::endl;
-                    }
-                }
-                break;
-            // October
-            case 10:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                break;
-            // November
-            case 11:
-                if (day > 30)
-                {
-                    std::cout << "This month has 30 days." << std::endl;
-                }
-                else
-                {
-                    if (magic = year)
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is magic!" << std::endl;
-                    }
-                    else
-                    {
-                        std::cout << month << '/' << day << '/' << year
-                        << " is not magic." << std::endl;
-                    }
-                }
-                break;
-            // December
-            case 12:
-                if (magic = year)
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is magic!" << std::endl;
-                }
-                else
-                {
-                    std::cout << month << '/' << day << '/' << year
-                    << " is not magic." << std::endl;
-                }
-                break;
-            default:
-                std::cout << "ERROR!!!" << std::endl;
-                std::cout << "You did not enter a valid month." << std::endl;
                 break;
         }
     }
