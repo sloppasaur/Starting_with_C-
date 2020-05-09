@@ -3,10 +3,14 @@
 // The program should say whether or not the guess is higher
 // or lower than the random number.
 #include <iostream>
+#include <stdio.h>      // for null
 #include <stdlib.h>     // for randoms
+#include <time.h>       // for seed
 
 int main()
 {
+    std::srand(time(NULL));
+
     int secret = std::rand() % 100 + 1,     // random number
         guess = 0;                          // user's guess
 
