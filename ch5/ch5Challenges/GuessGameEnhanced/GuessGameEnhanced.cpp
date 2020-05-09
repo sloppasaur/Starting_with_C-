@@ -10,7 +10,7 @@
 
 int main()
 {
-    std::srand (time(NULL));
+    std::srand(time(NULL));
 
     int secret = std::rand() % 100 + 1,     // random number
         guess = 0,                          // user's guess
