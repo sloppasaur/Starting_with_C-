@@ -3,7 +3,6 @@
 // for each ASCII code 32 - 127. Display 16 characters on each
 // line with one space between characters
 #include <iostream>
-#include <iomanip>
 
 int main()
 {
@@ -11,7 +10,7 @@ int main()
 
     while (code <= 127)
     {
-        // Every
+        // make 16 character rows.
         for (int r = 0; r < 16; r++)
         {
             std::cout << static_cast<char>(code) << " ";
